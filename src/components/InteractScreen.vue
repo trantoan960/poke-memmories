@@ -4,7 +4,7 @@
       class="screen__inner"
       :style="{
         width: `${
-          ((((1080 - 16 * 4) / Math.sqrt(cardsContext.length) - 16) * 3) / 4 +
+          ((((920 - 16 * 4) / Math.sqrt(cardsContext.length) - 16) * 3) / 4 +
             16) *
           Math.sqrt(cardsContext.length)
         }px`,
@@ -65,7 +65,7 @@ export default {
         )
           setTimeout(() => {
             this.$emit("onFinish");
-          }, 1000);
+          }, 920);
       } else if (
         this.rules.length === 2 &&
         this.rules[0].value !== this.rules[1].value

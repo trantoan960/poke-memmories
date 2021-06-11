@@ -3,12 +3,12 @@
     class="card"
     :class="{ disabled: isDisabled }"
     :style="{
-      height: `${(1080 - 16 * 4) / Math.sqrt(cardsContext.length) - 16}px`,
+      height: `${(920 - 16 * 4) / Math.sqrt(cardsContext.length) - 16}px`,
       width: `${
-        (((1080 - 16 * 4) / Math.sqrt(cardsContext.length) - 16) * 3) / 4
+        (((920 - 16 * 4) / Math.sqrt(cardsContext.length) - 16) * 3) / 4
       }px`,
       perspective: `${
-        ((((1080 - 16 * 4) / Math.sqrt(cardsContext.length) - 16) * 3) / 4) * 2
+        ((((920 - 16 * 4) / Math.sqrt(cardsContext.length) - 16) * 3) / 4) * 2
       }px`,
     }"
   >
@@ -22,11 +22,11 @@
           class="card__content"
           :style="{
             'background-size': `${
-              (((1080 - 16 * 4) / Math.sqrt(cardsContext.length) - 16) * 3) /
+              (((920 - 16 * 4) / Math.sqrt(cardsContext.length) - 16) * 3) /
               4 /
               3
             }px ${
-              (((1080 - 16 * 4) / Math.sqrt(cardsContext.length) - 16) * 3) /
+              (((920 - 16 * 4) / Math.sqrt(cardsContext.length) - 16) * 3) /
               4 /
               3
             }px`,
